@@ -1,0 +1,73 @@
+// VerilogA for gpdk090test, clock_gen, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module clock_gen(A,Abar,B,Bbar,C,Cbar);
+
+output A,Abar,B,Bbar,C,Cbar;
+voltage A,Abar,B,Bbar,C,Cbar;
+
+real		Atemp, Btemp, Ctemp;
+real		Atempbar, Btempbar, Ctempbar;
+parameter real	clk_period = 800p from (0:inf);
+parameter real	clk_period2 = 400p from (0:inf);
+parameter real	clk_period3 = 200p from (0:inf);
+parameter real	clk_high = 1.2;
+parameter real	clk_low = 0.0;
+parameter real	trise = 20p from [0:inf];
+parameter real	tfall = 20p from [0:inf];
+
+analog begin
+
+	@(initial_step) begin
+	 Atemp = 0;
+	 Btemp = 0;
+	 Ctemp = 0;
+	end
+
+	@(timer(5n,clk_period))	begin
+		if (Atemp==0) begin 
+			Atemp = clk_high;
+			Atempbar = clk_low;
+		end
+		else begin
+			Atemp = clk_low;
+			Atempbar = clk_high;
+		end
+		end
+
+	@(timer(5n,clk_period2)) begin
+		if (Btemp==0) begin 
+			Btemp = clk_high;
+			Btempbar = clk_low;
+		end
+		else begin
+			Btemp = clk_low;
+			Btempbar = clk_high;
+		end
+		end
+
+
+	@(timer(5n,clk_period3)) begin
+		if (Ctemp==0) begin 
+			Ctemp = clk_high;
+			Ctempbar = clk_low;
+		end
+		else begin
+			Ctemp = clk_low;
+			Ctempbar = clk_high;
+		end
+		end
+
+
+	V(A)	 <+ transition(Atemp, 0, trise, tfall);
+	V(Abar)	 <+ transition(Atempbar, 0, trise, tfall);
+	V(B)	 <+ transition(Btemp, 0, trise, tfall);
+	V(Bbar)	 <+ transition(Btempbar, 0, trise, tfall);
+	V(C)	 <+ transition(Ctemp, 0, trise, tfall);
+	V(Cbar)	 <+ transition(Ctempbar, 0, trise, tfall);
+	end
+
+
+endmodule
