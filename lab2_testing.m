@@ -11,7 +11,7 @@ tb_name = 'decoder_test_bench';
 addpath('/opt/cadence/MMSIM151/tools.lnx86/spectre/matlab/64bit');
 
 % directory that contains the simulation outputs
-directory = sprintf('%s/Cadence/simulation/%s/spectre/schematic/psf', getenv('HOME'), tb_name);
+directory = sprintf('%s/simulation/%s/spectre/schematic/psf', getenv('HOME'), tb_name);
 
 % set up basic parameters
 Vdd = 1.2; % define vdd
