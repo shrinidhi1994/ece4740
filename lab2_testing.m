@@ -5,7 +5,7 @@
 % (c) 2018 Oscar Castaneda, Olalekan Afuye, Charles Jeon & Christoph Studer
 
 % set up the name of your testbench cell
-tb_name = 'decoder_test_bench';
+tb_name = 'decoder_mark2_sim';
 
 % set up cds_srr function
 addpath('/opt/cadence/MMSIM151/tools.lnx86/spectre/matlab/64bit');
