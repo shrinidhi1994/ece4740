@@ -127,7 +127,7 @@ for i=1:8
     grid on
     legend('act.','exp.','location','south')
     xlim(2*period_a + 5000 + [0 2*period_a])
-    ylim([-1 1.5])
+    ylim([-0.2 1.4])
     xlabel('time [ps]')
     ylabel('output [V]')
     title(['y' num2str(i-1)])

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ssk285
+HostName                       en-ec-ph314-20.ece.cornell.edu
+ProcessIdentifier              5522
+ProcessCreationTime_UTC        1520732359
+ProcessCreationTime_Readable   Sat Mar 10 20:39:19 2018 EST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/ssk285/Desktop/Cadence/ece4740/nand3_mark1/constraint/hierDesign.oa.cdslck
+TimeEditLocked                 Sat Mar 10 20:47:02 2018 EST
