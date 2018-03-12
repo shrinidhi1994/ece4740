@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Sun Mar 11 14:58:31 2018 EDT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/ap2289/Cadence/ece4740/nor_gate/schematic/sch.oa.cdslck
-TimeEditLocked                 Sun Mar 11 14:59:56 2018 EDT
+FilePathUsedToEditLock         /home/ap2289/Cadence/ece4740/nor_gate/layout/layout.oa.cdslck
+TimeEditLocked                 Sun Mar 11 17:41:22 2018 EDT

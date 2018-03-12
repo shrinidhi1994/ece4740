@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ap2289
+HostName                       en-ec-ph314-23.ece.cornell.edu
+ProcessIdentifier              15427
+ProcessCreationTime_UTC        1520794705
+ProcessCreationTime_Readable   Sun Mar 11 14:58:25 2018 EDT
+AppIdentifier                  /opt/cadence/ic/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       
+FilePathUsedToEditLock         /home/ap2289/Cadence/ece4740/nor_gate/physConfig/physExpand.cfg
+TimeEditLocked                 Sun Mar 11 17:41:24 2018 EDT
